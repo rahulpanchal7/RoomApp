@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "518708615745",
+    "firebase_url": "https://roomapp-3ba19.firebaseio.com",
+    "project_id": "roomapp-3ba19",
+    "storage_bucket": "roomapp-3ba19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518708615745:android:8b866b846dd90b08",
+        "android_client_info": {
+          "package_name": "com.rahul.roomapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "518708615745-nlg8ml3uoqpg3nqha3sm9je39moqi6je.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rahul.roomapp",
+            "certificate_hash": "de12fd49520b3a3c7644e61055b2495e1b8d212d"
+          }
+        },
+        {
+          "client_id": "518708615745-eq5s8k7b8rbaeu16ha1j8pk81djqsbju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChEamKcQamdmbC173tp2oGZXoda3c9T8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "518708615745-eq5s8k7b8rbaeu16ha1j8pk81djqsbju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
