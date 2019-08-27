@@ -1,5 +1,6 @@
 package com.rahul.roomapp.ui.main
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
@@ -45,9 +46,9 @@ class AddUser : AppCompatActivity() {
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_user)
-        var editnameView = findViewById(R.id.edit_name) as EditText
-        var editemailView = findViewById(R.id.edit_email) as EditText
-        var editusernameView = findViewById(R.id.edit_username) as EditText
+        val editnameView = findViewById(R.id.edit_name) as EditText
+        val editemailView = findViewById(R.id.edit_email) as EditText
+        val editusernameView = findViewById(R.id.edit_username) as EditText
         val save_button = findViewById<Button>(R.id.button_save)
 
 
@@ -62,9 +63,9 @@ class AddUser : AppCompatActivity() {
             ) {
                 setResult(Activity.RESULT_CANCELED, replyIntent)
             } else {
-                var name = editnameView.text.toString()
-                var email = editemailView.text.toString()
-                var username = editusernameView.text.toString()
+                val name = editnameView.text.toString()
+                val email = editemailView.text.toString()
+                val username = editusernameView.text.toString()
 
                 replyIntent.putExtra(EXTRA_REPLY1, name)
                 Log.i("DB", "Name $name")
@@ -128,6 +129,7 @@ class AddUser : AppCompatActivity() {
         }
 
     }
+    @SuppressLint("SimpleDateFormat")
     @Throws(IOException::class)
     fun createImageFile(): File? {
         // Create an image file name
