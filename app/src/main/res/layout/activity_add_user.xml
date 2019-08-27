@@ -25,8 +25,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
             android:hint="@string/hint_email"
-            android
-            :inputType="textAutoComplete"
+            android:inputType="textAutoComplete"
             android:padding="@dimen/small_padding"
             android:layout_marginBottom="@dimen/big_padding"
             android:layout_marginTop="@dimen/big_padding"
