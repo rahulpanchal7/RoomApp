@@ -84,6 +84,12 @@ class AddUser : AppCompatActivity() {
 
         button_camera.setOnClickListener {
             dispatchTakePictureIntent()
+
+        }
+
+        button_goto_camera.setOnClickListener{
+            val intent = Intent(this,CameraActivity::class.java)
+            startActivity(intent)
         }
 
         button_logout.setOnClickListener {
@@ -108,7 +114,6 @@ class AddUser : AppCompatActivity() {
     }
 
     private fun dispatchTakePictureIntent() {
-//comment
         /* MediaStore.ACTION_IMAGE_CAPTURE is used to capture images or videos without directly using the Camera object*/
         Intent(MediaStore.ACTION_IMAGE_CAPTURE).also { takePictureIntent ->
             takePictureIntent.resolveActivity(packageManager)?.also {
@@ -117,7 +122,7 @@ class AddUser : AppCompatActivity() {
                 } catch (ex: IOException) {
                     null
                 }
-//                galleryAddPic()
+
                 photoFile?.also {
                     val photoURI: Uri =
                         FileProvider.getUriForFile(this, "com.rahul.roomapp.fileprovider", it)

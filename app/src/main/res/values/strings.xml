@@ -29,4 +29,7 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="button_camera">Take a Photo</string>
+    <string name="capture_button">CApture</string>
+    <string name="desc">capture img plac holder\'</string>
+    <string name="button_goto_camera">Go To CustomCamera</string>
 </resources>

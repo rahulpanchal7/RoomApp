@@ -76,5 +76,9 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
 
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+    // dexter runtime permissions
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.karumi:dexter:4.2.0'
 }
 apply plugin: 'com.google.gms.google-services'

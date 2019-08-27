@@ -60,6 +60,15 @@
             android:textColor="@color/buttonLabel" />
 
     <Button
+            android:id="@+id/button_goto_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:background="@color/colorPrimary"
+            android:text="@string/button_goto_camera"
+            android:textColor="@color/buttonLabel" />
+
+    <Button
             android:id="@+id/button_logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
