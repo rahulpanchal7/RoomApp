@@ -54,7 +54,7 @@ class AddUser : AppCompatActivity() {
 
         pref = this.getSharedPreferences("RoomApp", Context.MODE_PRIVATE) ?: return
 
-        Log.i("SPF", "UA3 <${pref?.getString("logged", "")}>")
+        Log.i("SPF", "UA4 <${pref?.getString("logged", "")}>")
         save_button.setOnClickListener {
             val replyIntent = Intent()
             if (TextUtils.isEmpty(editnameView.text) && TextUtils.isEmpty(editemailView.text) && TextUtils.isEmpty(
@@ -89,7 +89,7 @@ class AddUser : AppCompatActivity() {
         button_logout.setOnClickListener {
             mAuth?.signOut()
             pref?.edit()?.putString("logged", "false")?.apply()
-            Log.i("SPF", "UA4 <${pref?.getString("logged", "")}>")
+            Log.i("SPF", "UA5 <${pref?.getString("logged", "")}>")
 
             val intent = Intent(applicationContext, UserRegistration::class.java)
             startActivity(intent)
@@ -108,7 +108,7 @@ class AddUser : AppCompatActivity() {
     }
 
     private fun dispatchTakePictureIntent() {
-
+//comment
         /* MediaStore.ACTION_IMAGE_CAPTURE is used to capture images or videos without directly using the Camera object*/
         Intent(MediaStore.ACTION_IMAGE_CAPTURE).also { takePictureIntent ->
             takePictureIntent.resolveActivity(packageManager)?.also {
@@ -123,13 +123,12 @@ class AddUser : AppCompatActivity() {
                         FileProvider.getUriForFile(this, "com.rahul.roomapp.fileprovider", it)
                     takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI)
                     startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE)
-//                }
                 }
             }
         }
-
     }
-  
+
+    @SuppressLint("SimpleDateFormat")
     @Throws(IOException::class)
     fun createImageFile(): File? {
         // Create an image file name

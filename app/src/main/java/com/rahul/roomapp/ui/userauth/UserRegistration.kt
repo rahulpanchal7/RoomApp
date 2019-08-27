@@ -33,7 +33,7 @@ class UserRegistration: AppCompatActivity() {
         mAuth = FirebaseAuth.getInstance()
 
         pref = this.getSharedPreferences("RoomApp", Context.MODE_PRIVATE) ?: return
-        var spf = pref?.getString("logged","")
+        val spf = pref?.getString("logged","")
         Log.e("SPF","UA1 <$spf>")
         when(spf){
             "true" ->
@@ -106,7 +106,7 @@ class UserRegistration: AppCompatActivity() {
                     val intent = Intent(this@UserRegistration, MainActivity::class.java)
                     startActivity(intent)
                     Toast.makeText(this@UserRegistration, "hello $email", Toast.LENGTH_SHORT).show()
-                    Log.e("SPF","UA4 <${pref?.getString("logged","")}>")
+                    Log.e("SPF","UA3 <${pref?.getString("logged","")}>")
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w("SIGN", "signInWithEmail:failure", task.exception)
