@@ -129,7 +129,7 @@ class AddUser : AppCompatActivity() {
         }
 
     }
-    @SuppressLint("SimpleDateFormat")
+  
     @Throws(IOException::class)
     fun createImageFile(): File? {
         // Create an image file name
